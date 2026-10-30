@@ -467,6 +467,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+const nBtn = document.querySelector('.hero-next');
+
+// console.log(nBtn);
+
+nBtn.addEventListener('click',()=>{
+    alert(`ボタンが押されました！`);
+});
+
+
+
 // modalContent.addEventListener('click', function(event){
 //     event.stopPropagation();
 // });
