@@ -1,0 +1,108 @@
+{
+    "products": [
+        {
+            "id": "spike-001",
+            "brand": "MIZUNO",
+            "name": "モレリア NEO IV JAPAN",
+            "price": 24200,
+            "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80",
+            "alt": "モレリア NEO IV JAPAN",
+            "badges": [
+                {
+                    "label": "AG対応",
+                    "type": "ag"
+                },
+                {
+                    "label": "NEW",
+                    "type": "new"
+                }
+            ]
+        },
+        {
+            "id": "spike-002",
+            "brand": "NIKE",
+            "name": "マーキュリアル ヴェイパー 15",
+            "price": 18700,
+            "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=300&q=80",
+            "alt": "マーキュリアル ヴェイパー 15",
+            "badges": [
+                {
+                    "label": "HG対応",
+                    "type": "hg"
+                }
+            ]
+        },
+        {
+            "id": "spike-003",
+            "brand": "ASICS",
+            "name": "DS LIGHT 新作モデル",
+            "price": 16500,
+            "image": "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=300&q=80",
+            "alt": "サッカーシューズ",
+            "badges": [
+                {
+                    "label": "NEW",
+                    "type": "new"
+                },
+                {
+                    "label": "HG対応",
+                    "type": "hg"
+                }
+            ]
+        },
+        {
+            "id": "spike-004",
+            "brand": "ASICS",
+            "name": "DS LIGHT 新作モデル",
+            "price": 16500,
+            "image": "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=300&q=80",
+            "alt": "サッカーシューズ",
+            "badges": [
+                {
+                    "label": "NEW",
+                    "type": "new"
+                },
+                {
+                    "label": "HG対応",
+                    "type": "hg"
+                }
+            ]
+        },
+        {
+            "id": "spike-005",
+            "brand": "ASICS",
+            "name": "DS LIGHT 新作モデル",
+            "price": 16500,
+            "image": "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=300&q=80",
+            "alt": "サッカーシューズ",
+            "badges": [
+                {
+                    "label": "NEW",
+                    "type": "new"
+                },
+                {
+                    "label": "HG対応",
+                    "type": "hg"
+                }
+            ]
+        },
+        {
+            "id": "spike-006",
+            "brand": "ASICS",
+            "name": "DS LIGHT 新作モデル",
+            "price": 16500,
+            "image": "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=300&q=80",
+            "alt": "サッカーシューズ",
+            "badges": [
+                {
+                    "label": "NEW",
+                    "type": "new"
+                },
+                {
+                    "label": "AG対応",
+                    "type": "ag"
+                }
+            ]
+        }
+    ]
+}

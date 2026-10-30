@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT PITCH | サッカー用品・オムニチャネルEC</title>
+    <!-- Google Fonts: Noto Sans JP & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="videoOverlay" class="video-overlay is-hidden">
+        <div class="video-container">
+            <button id="closeBtn" class="close-btn">
+                &times;
+            </button>
+            <video src="videos/NEXT PITCH_CM.mp4" muted playsinline controls alt="NEXT PITCHの紹介映像"></video>
+        </div>
+    </div>
+
+    <!-- 1. 告知ヘッダー＆メインナビゲーション -->
+    <div class="announcement-bar">
+        【部活生応援】¥10,000以上で送料無料！店舗受け取りなら即日可能
+    </div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <a href="index.html" class="logo" aria-label="NEXT PITCH ホーム">NEXT <span>PITCH</span></a>
+
+                <!-- 最小44px×44pxのタップ領域を担保したアイコンボタン群 -->
+                <div class="header-icons">
+                    <a href="contact.html" class="icon-btn" aria-label="お問い合わせ">
+                        <svg class="icon-svg" xmlns="http://w3.org" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <span class="icon-label">お問い合わせ</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="店舗検索">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span class="icon-label">店舗</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="お気に入り">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        <span class="icon-label">お気に入り</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="カート">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                        </svg>
+                        <span class="icon-label">カート</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 高さ44pxの検索窓 -->
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="モレリア、AGスパイク、ウェアなど">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. ヒーローセクション -->
+        <section class="hero hero-swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide hero-slide-1"></div>
+                <div class="swiper-slide hero-slide hero-slide-2"></div>
+                <div class="swiper-slide hero-slide hero-slide-3"></div>
+            </div>
+
+            <button type="button" class="hero-prev" aria-label="前の画像へ">←</button>
+            <button type="button" class="hero-next" aria-label="次の画像へ">→</button>
+            <div class="swiper-pagination hero-pagination"></div>
+        </section>
+
+        <div class="hero-actions">
+            <!-- .hero-content -->
+            <h1 class="hero-title">一歩目を、変えろ。</h1>
+            <p class="hero-subtitle">2026年秋 最新限定カラーモデル入荷</p>
+            <a href="#" class="btn btn-primary btn-touch">新作スパイクを見る</a>
+            <button id="openVideoBtn" class="open-video-btn">
+                <span class="video-logo">▶️</span>
+                NEXT PITCHの紹介映像を見る
+                <span class="play-logo">📺️</span>
+            </button>
+        </div>
+
+        <!-- 3. クイックアクションバナー -->
+        <section class="quick-actions">
+            <a href="#" class="action-card">
+                <span class="action-card-icon">👕</span>
+                <span class="action-card-title">チームオーダー</span>
+            </a>
+            <a href="#" class="action-card">
+                <span class="action-card-icon">🦶</span>
+                <span class="action-card-title">足型測定予約</span>
+            </a>
+            <a href="#" class="action-card">
+                <span class="action-card-icon">🏷️</span>
+                <span class="action-card-title">セール・特売</span>
+            </a>
+        </section>
+
+        <!-- 4. 直感カテゴリナビゲーション -->
+        <section class="section-padding">
+            <div class="section-title">
+                <h2>カテゴリから探す</h2>
+            </div>
+            <div class="category-grid">
+                <a href="#" class="category-item">
+                    <span class="category-icon">👟</span>
+                    <span class="category-name">スパイク</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">🎽</span>
+                    <span class="category-name">ウェア</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">🥊</span>
+                    <span class="category-name">GK用品</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">⚽</span>
+                    <span class="category-name">ボール/小物</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">🧒</span>
+                    <span class="category-name">ジュニア</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">🛡️</span>
+                    <span class="category-name">ブランド別</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. 特集・キャンペーン（スライド） -->
+        <section class="section-padding bg-white border-tb">
+
+            <div class="section-title">
+                <h2>おすすめ特集</h2>
+
+                <div class="slider-controls">
+                    <button type="button" id="featurePrev" aria-label="前の特集を見る">
+                        ←
+                    </button>
+                    <button type="button" id="featureNext" aria-label="次の特集を見る">
+                        →
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="horizontal-scroll">
+                <a href="#" class="feature-card">
+                    <div class="feature-img feature-img-1"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">人工芝（AG）対応スパイク特集</div>
+                        <div class="feature-desc">怪我を防ぎ、パフォーマンスを高める最適ソール。</div>
+                    </div>
+                </a>
+                <a href="#" class="feature-card">
+                    <div class="feature-img feature-img-2"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">部活生応援！耐久性ウェア</div>
+                        <div class="feature-desc">毎日の激しい練習に耐え抜くタフなトレーニング着。</div>
+                    </div>
+                </a>
+                <a href="#" class="feature-card">
+                    <div class="feature-img feature-img-3"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">新作スパイク特集</div>
+                        <div class="feature-desc">最新モデルで自分のプレーをアップデート。</div>
+                    </div>
+                </a><a href="#" class="feature-card">
+                    <div class="feature-img feature-img-4"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">ジュニア向けサッカー用品</div>
+                        <div class="feature-desc">成長期のプレーヤーにぴったりのギア。</div>
+                    </div>
+                </a>
+                <a href="#" class="feature-card">
+                    <div class="feature-img feature-img-5"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">ゴールキーパー用品特集</div>
+                        <div class="feature-desc">セーブを支えるグローブやGKギア。</div>
+                    </div>
+                </a>
+                <a href="#" class="feature-card">
+                    <div class="feature-img feature-img-6"></div>
+                    <div class="feature-body">
+                        <div class="feature-title">トレーニング小物特集</div>
+                        <div class="feature-desc">日々の練習に役立つアイテムをチェック。</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. 対話型スパイク診断 -->
+        <section class="section-padding">
+            <div class="finder-box">
+                <h2 class="finder-title">3秒でわかる！スパイク診断</h2>
+                <p class="finder-desc">グラウンドと足型を選ぶだけで最適モデルを提案</p>
+
+                <select class="finder-select" aria-label="グラウンドを選択">
+                    <option>1. プレーするグラウンドを選択</option>
+                    <option>土グラウンド (HG)</option>
+                    <option>人工芝 (AG)</option>
+                    <option>天然芝 (FG)</option>
+                </select>
+
+                <select class="finder-select" aria-label="足幅タイプを選択">
+                    <option>2. 足幅タイプを選択</option>
+                    <option>標準 (2E)</option>
+                    <option>幅広・甲高 (3E/4E)</option>
+                    <option>わからない・足型測定したい</option>
+                </select>
+
+                <button class="btn btn-primary btn-block btn-touch">診断結果を見る</button>
+            </div>
+        </section>
+
+        <!-- 7. 新着アイテム・人気商品 -->
+        <section class="section-padding bg-white">
+            <div class="section-title">
+                <h2>注目の新着ギア</h2>
+                <a href="#" class="more-link">ランキング ＞</a>
+            </div>
+
+            <div class="product-filters">
+                <label for="brandFilter">ブランド</label>
+                <select id="brandFilter">
+                    <option value="">すべてのブランド</option>
+                    <option value="MIZUNO">MIZUNO</option>
+                    <option value="NIKE">NIKE</option>
+                    <option value="ASICS">ASICS</option>
+                </select>
+
+                <label for="groundFilter">グラウンド</label>
+                <select id="groundFilter">
+                    <option value="">すべてのブランド</option>
+                    <option value="hg">土グラウンド(HG)</option>
+                    <option value="ag">人工芝(AG)</option>
+                </select>
+
+                <p id="resultCount" area-live="polite">
+                    商品を読み込んでいます...
+                </p>
+
+            </div>
+
+            <div id="productsContainer" class="product-grid">
+                <!-- <div class="product-card">
+                    <a href="#" class="product-link" aria-label="モレリア NEO IV JAPAN">
+                        <div class="product-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80"
+                                alt="モレリア NEO IV JAPAN" class="product-img">
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-ag">AG対応</span>
+                            <span class="badge badge-new">NEW</span>
+                        </div>
+                        <div class="product-brand">MIZUNO</div>
+                        <div class="product-name">モレリア NEO IV JAPAN</div>
+                        <div class="product-price">¥24,200</div>
+                    </a> -->
+                <!-- 押しやすい44pxのハート型ボタン -->
+                <!-- <button class="fav-btn" aria-label="お気に入りに追加"><svg id="my-heart" viewBox="0 0 24 24" width="50"
+                            height="20" style="cursor: pointer; user-select: none;">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                                fill="transparent" stroke="black" stroke-width="1" />
+                        </svg></button>
+                </div> -->
+
+                <!-- <div class="product-card">
+                    <a href="#" class="product-link" aria-label="マーキュリアル ヴェイパー 15">
+                        <div class="product-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=300&q=80"
+                                alt="マーキュリアル ヴェイパー 15" class="product-img">
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-hg">HG対応</span>
+                        </div>
+                        <div class="product-brand">NIKE</div>
+                        <div class="product-name">マーキュリアル ヴェイパー 15</div>
+                        <div class="product-price">¥18,700</div>
+                    </a>
+                    <button class="fav-btn" aria-label="お気に入りに追加"><svg id="my-heart2" viewBox="0 0 24 24" width="50"
+                            height="20" style="cursor: pointer; user-select: none;">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                                fill="transparent" stroke="black" stroke-width="1" />
+                        </svg></button>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- 8. 実店舗連携 (オムニチャネル) -->
+        <section class="section-padding">
+            <div class="omni-banner">
+                <span class="omni-icon">🏪</span>
+                <div class="omni-text">
+                    <h3>店舗受取りなら送料無料！</h3>
+                    <p>ECで注文して部活帰りに最寄り店舗で受取り可能。サイズ微調整もその場で対応。</p>
+                    <div class="logo-container">
+                        <img src="images/セブンイレブン ロゴ 透過.png" alt="セブンイレブンロゴ画像" width="40" height="40">
+                        <img src="images/ローソン ロゴ透過.png" alt="ローソンロゴ画像" width="40" height="40">
+                        <img src="images/ファミリーマート ロゴ透過.png" alt="ファミリーマートロゴ画像" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. 顧客安心保証 ＆ フッター -->
+    <div class="guarantee-box">
+        <div class="guarantee-item">
+            <span class="guarantee-icon">🔄</span>
+            <span>サイズ交換<br>1回無料</span>
+        </div>
+        <div class="guarantee-item">
+            <span class="guarantee-icon">🚚</span>
+            <span>15時までの注文<br>即日発送</span>
+        </div>
+        <div class="guarantee-item">
+            <span class="guarantee-icon">💬</span>
+            <span>LINEで<br>サイズ相談</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#" class="footer-link">店舗一覧</a>
+            <a href="#" class="footer-link">サイズガイド</a>
+            <a href="#" class="footer-link">よくある質問</a>
+            <a href="contact.html" class="footer-link">お問い合わせ</a>
+        </nav>
+        <div class="footer-copy">
+            &copy; 2026 NEXT PITCH Inc. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- 商品詳細モーダル -->
+    <div id="productModal" class="modal-overlay is-hidden" area-hidden="true">
+
+        <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+
+            <button type="button" id="closeProductModal" class="modal-close" aria-label="商品詳細を閉じる">
+                &times;
+            </button>
+
+            <img src="" alt="" id="modalProductImage" class="modal-product-image">
+
+            <p id="modalProductBrand" class="modal-product-brand"></p>
+
+            <h2 id="modalProductName" class="modal-product-name"></h2>
+
+            <p id="modalProductPrice" class="product-price"></p>
+
+            <div id="modalProductBadges" class="product-badges"></div>
+
+
+            <p class="modal-note">
+                商品の詳しい仕様やサイズは、商品情報をご確認ください。
+            </p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

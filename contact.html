@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT PITCH | サッカー用品・オムニチャネルEC</title>
+    <!-- Google Fonts: Noto Sans JP & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- <div id="videoOverlay" class="video-overlay">
+        <div class="video-container">
+            <button id="closeBtn" class="close-btn">
+                &times;
+            </button>
+            <video src="videos/NEXT PITCH_CM.mp4" autoplay muted playsinline controls alt="NEXT PITCHの紹介映像"></video>
+        </div>
+    </div> -->
+
+    <!-- 1. 告知ヘッダー＆メインナビゲーション -->
+    <div class="announcement-bar">
+        【部活生応援】¥10,000以上で送料無料！店舗受け取りなら即日可能
+    </div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <a href="index.html" class="logo" aria-label="NEXT PITCH ホーム">NEXT <span>PITCH</span></a>
+
+                <!-- 最小44px×44pxのタップ領域を担保したアイコンボタン群 -->
+                <div class="header-icons">
+                    <a href="#" class="icon-btn" aria-label="お問い合わせ">
+                        <svg class="icon-svg" xmlns="http://w3.org" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <span class="icon-label">お問い合わせ</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="店舗検索">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span class="icon-label">店舗</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="お気に入り">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        <span class="icon-label">お気に入り</span>
+                    </a>
+                    <a href="#" class="icon-btn" aria-label="カート">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                        </svg>
+                        <span class="icon-label">カート</span>
+                    </a>
+                </div>
+            </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="contact-page section-padding">
+        <div class="contact-header">
+            <h1 class="page-title">CONTACT</h1>
+            <p class="page-subtitle">お問い合わせ・ご相談</p>
+        </div>
+
+        <!-- よくある質問導線バナー -->
+        <div class="faq-banner">
+            <p class="faq-banner-text">スパイクのサイズ選びや配送・返品についてお急ぎの場合は、よくある質問をご確認ください。</p>
+            <a href="#" class="btn btn-secondary btn-block">よくある質問（FAQ）を見る</a>
+        </div>
+
+        <!-- お問い合わせフォーム -->
+        <form class="contact-form" action="#" method="post">
+            <!-- お問い合わせ種別 -->
+            <div class="form-group">
+                <label for="category" class="form-label">お問い合わせ種類 <span class="required">必須</span></label>
+                <select id="category" name="category" class="form-control" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="size">スパイク・シューズのサイズ・フィッティング相談</option>
+                    <option value="team">チームオーダー（ユニフォーム・マーキング等）</option>
+                    <option value="stock">店舗在庫・取り置き・店舗受け取りについて</option>
+                    <option value="order">オンラインストアでのご注文・配送・変更</option>
+                    <option value="return">返品・交換・不具合について</option>
+                    <option value="other">その他のお問い合わせ</option>
+                </select>
+            </div>
+
+            <!-- お名前 -->
+            <div class="form-group">
+                <label for="name" class="form-label">お名前 <span class="required">必須</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="山田 太郎" required>
+            </div>
+
+            <!-- フリガナ -->
+            <div class="form-group">
+                <label for="kana" class="form-label">お名前（フリガナ） <span class="required">必須</span></label>
+                <input type="text" id="kana" name="kana" class="form-control" placeholder="ヤマダ タロウ" required>
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="form-group">
+                <label for="email" class="form-label">メールアドレス <span class="required">必須</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="example@nextpitch.jp"
+                    required>
+            </div>
+
+            <!-- 電話番号 -->
+            <div class="form-group">
+                <label for="phone" class="form-label">電話番号 <span class="optional">任意</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="090-0000-0000">
+            </div>
+
+            <!-- 注文番号（EC注文に関する問い合わせ用） -->
+            <div class="form-group">
+                <label for="order-id" class="form-label">注文番号 <span class="optional">任意</span></label>
+                <input type="text" id="order-id" name="order_id" class="form-control"
+                    placeholder="NP-123456（ご注文完了メールに記載）">
+            </div>
+
+            <!-- お問い合わせ内容 -->
+            <div class="form-group">
+                <label for="message" class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
+                <textarea id="message" name="message" class="form-control textarea" rows="6"
+                    placeholder="具体的なご質問内容や、スパイクのご相談の場合は対象グラウンド（土・人工芝・天然芝）や足型のお悩みなどもご記入ください。" required></textarea>
+            </div>
+
+            <!-- 個人情報保護方針同意 -->
+            <div class="form-group privacy-check">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="privacy" required>
+                    <span><a href="#" class="inline-link">プライバシーポリシー</a>に同意する</span>
+                </label>
+            </div>
+
+            <!-- 送信ボタン -->
+            <button type="submit" class="btn btn-primary btn-block submit-btn">送信する</button>
+        </form>
+
+        <!-- サポート情報 -->
+        <div class="support-info">
+            <h3 class="support-title">カスタマーサポート営業時間</h3>
+            <p class="support-detail">平日 10:00 〜 18:00（土・日・祝日・年末年始を除く）</p>
+            <p class="support-note">※お問い合わせいただいた内容につきましては、通常1〜2営業日以内に順次返信いたします。</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#" class="footer-link">店舗一覧</a>
+            <a href="#" class="footer-link">サイズガイド</a>
+            <a href="#" class="footer-link">よくある質問</a>
+            <a href="#" class="footer-link">お問い合わせ</a>
+        </nav>
+        <div class="footer-copy">
+            &copy; 2026 NEXT PITCH Inc. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

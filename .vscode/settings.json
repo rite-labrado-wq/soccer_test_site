@@ -1,0 +1,42 @@
+{
+    "cSpell.words": [
+        "accent",
+        "aicks",
+        "ASICKS",
+        "asics",
+        "badges",
+        "brand",
+        "bullet",
+        "card",
+        "clamp",
+        "clickable",
+        "dslite",
+        "Favorite",
+        "filtered",
+        "Fonts",
+        "heart",
+        "hearts",
+        "hero",
+        "icons",
+        "logo",
+        "MIZUNO",
+        "modal",
+        "muted",
+        "pagenation",
+        "pagination",
+        "polite",
+        "quot",
+        "Rights",
+        "slide",
+        "slider",
+        "spike",
+        "subtitle"
+    ],
+    "json.schemas": [],
+    "emmet.syntaxProfiles": {
+        "css": {
+            "intUnit": "%",
+            "floatUnit": "%"
+        }
+    }
+}
